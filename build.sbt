@@ -2,8 +2,10 @@ name := "reactive-json-test"
 
 version := "1.0-SNAPSHOT"
 
-libraryDependencies ++= Seq(
-  "com.typesafe.play.extras" %% "iteratees-extras" % "1.2.0"
-)
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-play.Project.playScalaSettings
+scalaVersion := "2.11.2"
+
+libraryDependencies ++= Seq(
+  "com.typesafe.play.extras" %% "iteratees-extras" % "1.4.0"
+)

@@ -10,7 +10,6 @@ import play.api.test._
 import play.api.test.Helpers._
 import play.api.libs.json._
 import play.api.http.ContentTypes._
-import play.api.libs.ws._
 
 import scala.concurrent.duration._
 
